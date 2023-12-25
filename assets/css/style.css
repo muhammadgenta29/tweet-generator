@@ -1,0 +1,26 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+.h1-custom {
+  align-self: stretch;
+  color: #000;
+  font-family: "Inter";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: bolder !important;
+  line-height: 120%;
+}
+.p-custom {
+  width: 592px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.icon-three {
+  width: auto;
+  height: 106.665px;
+}

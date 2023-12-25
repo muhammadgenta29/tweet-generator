@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              whiteOld: "#F8F8F8",
+              orangeOld: "#FF8080",
+              orange: "#FFCF96",
+              blackYoung: "#333",
+              greenYoung: "#CDFAD5",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="bg-orange p-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="text-white text-xl font-bold">
+            <img src="assets/img/logo/logo.svg" alt="" />
+          </div>
+
+          <div class="hidden md:flex space-x-4">
+            <button
+              class="bg-orangeOld text-white text-xs px-4 py-2 rounded-full"
+            >
+              TRY FOR FREE
+            </button>
+          </div>
+
+          <div class="md:hidden">
+            <button id="mobile-menu-btn" class="text-white focus:outline-none">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="mobile-menu"
+      class="md:hidden bg-orange text-center w-full p-4 hidden"
+    >
+      <button
+        class="bg-orangeOld w-fit text-white text-xs px-4 py-2 rounded-full"
+      >
+        TRY FOR FREE
+      </button>
+    </div>
+
+    <div class="bg-white pt-10 pb-16">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center sm:mx-16"
+        >
+          <div
+            class="bg-white rounded-md w-5/6 mx-auto text-center lg:text-start"
+          >
+            <h1 class="text-4xl xl:text-6xl font-bold mb-10">
+              Automated AI-Crafted Tweets
+            </h1>
+            <p class="mb-10 me-4">
+              Ditch the time sink of writing your own tweets. Experience the
+              magic of automatic AI-generated content, inspired by trending
+              content and your favourite influencers.
+            </p>
+            <div
+              class="flex items-center justify-center lg:justify-start gap-3"
+            >
+              <button
+                class="bg-orangeOld text-white text-xs px-4 py-2 rounded-full"
+              >
+                TRY FOR FREE
+              </button>
+              <a href="#" class="text-xs">No credit card required</a>
+            </div>
+          </div>
+
+          <div class="bg-white p-4 mx-auto">
+            <img src="assets/img/img-hero.svg" alt="img-hero" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-blackYoung py-14">
+      <div class="max-w-7xl text-center mx-auto">
+        <div class="mx-16">
+          <h3 class="text-3xl font-bold text-white">Set it... and forget it</h3>
+          <p class="text-white font-normal mx-auto mt-3 md:w-9/12 lg:w-5/12">
+            Our AI crafts unique content in your tone, then automatically
+            schedules it to post for you. All on autopilot.
+          </p>
+          <p class="text-white mx-auto">
+            We automate everything, so you can focus on what really matters.
+          </p>
+          <div class="mt-24 grid grid-cols-1 lg:grid-cols-3 gap-10 mx-auto">
+            <div class="flex items-center flex-col">
+              <img
+                src="assets/img/icon/feed.svg"
+                alt="icon"
+                class="icon-three"
+              />
+              <div class="mt-6 bg-greenYoung p-5 sm:w-4/6 md:w-3/6 lg:w-full">
+                <h6 class="font-semibold text-2xl">Feed</h6>
+                <p class="text-base font-normal w-11/12 mx-auto mt-2">
+                  Tell us the topics and influencers you want to use to shape
+                  your content arou w-3/6 lg:w-fullnd
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center flex-col">
+              <img
+                src="assets/img/icon/create.svg"
+                alt="icon"
+                class="icon-three"
+              />
+              <div class="mt-6 bg-greenYoung p-5 sm:w-4/6 md:w-3/6 lg:w-full">
+                <h6 class="font-semibold text-2xl">Create</h6>
+                <p class="text-base font-normal w-11/12 mx-auto mt-2">
+                  Our AI generates new content daily based on current and
+                  trending topics, listening to content from your favourite
+                  influencers
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center flex-col">
+              <img
+                src="assets/img/icon/schedule.svg"
+                alt="icon"
+                class="icon-three"
+              />
+              <div class="mt-6 bg-greenYoung p-5 sm:w-4/6 md:w-3/6 lg:w-full">
+                <h6 class="font-semibold text-2xl">Schedule</h6>
+                <p class="text-base font-normal w-11/12 mx-auto mt-2">
+                  Tweets are automatically scheduled for your approval, or leave
+                  it on full autopilot.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white pt-14 pb-30">
+      <div class="max-w-7xl mx-auto bg-whiteOld px-4 pt-4 pb-10">
+        <h6 class="text-3xl text-orangeOld font-semibold">
+          What our users reckon...
+        </h6>
+        <div
+          class="mt-6 max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-3"
+        >
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            Game-changer for my Twitter(X)
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            AI magic in every tweet
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            Tweeting made unbelievably simple!
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            Influencer vibes in a click
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            Perfect for the lazy marketer
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            You can’t beat free
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            From trend to tweet instantly
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            Massive time saver, big results!
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            I never miss a trending topic now
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            All of my influencer insights are automated
+          </div>
+
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            I publish more and worry less
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            This is working smart with AI at it’s best!
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            Tweeting made unbelievably simple!
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            The AI writes better tweets than I could myself
+          </div>
+          <div
+            class="bg-blackYoung text-white text-xs py-2 px-4 sm:py-3 sm:px-8 rounded-xl sm:mb-4"
+          >
+            Full autopilot or manual scheduling. I love the control!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-20">
+      <div class="max-w-7xl mx-auto text-center">
+        <h6 class="text-lg fw-bold font-black">Trusted By</h6>
+        <div
+          class="mt-4 flex items-center justify-center flex-wrap gap-12 mx-4 sm:mx-16"
+        >
+          <img src="assets/img/icon/trusted1.svg" alt="icon" />
+          <img src="assets/img/icon/trusted2.svg" alt="icon" />
+          <img src="assets/img/icon/trusted3.svg" alt="icon" />
+          <img src="assets/img/icon/trusted4.svg" alt="icon" />
+          <img src="assets/img/icon/trusted5.svg" alt="icon" />
+          <img src="assets/img/icon/trusted6.svg" alt="icon" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-orange mt-12 pt-20 pb-10">
+      <div class="max-w-5xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-center md:justify-between sm:mx-16"
+        >
+          <div class="left mx-auto">
+            <div class="w-fit bg-white text-center px-2 py-1 font-bold">
+              Company Logo
+            </div>
+          </div>
+          <div class="right flex mx-auto gap-20 mt-6 md:mt-0">
+            <div class="">
+              <h6 class="font-bold uppercase sm:mb-4">Company</h6>
+              <p class="text-sm">How it works</p>
+            </div>
+            <div class="">
+              <h6 class="font-bold uppercase sm:mb-4">About</h6>
+              <p class="text-sm mb-2">Terms & Conditions</p>
+              <p class="text-sm">Privacy Policy</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 md:mt-4 text-center">
+          <span class="text-sm font-normal font-blackYoung"
+            >Copyright © 2023 Company name</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $("#mobile-menu-btn").on("click", function () {
+        $("#mobile-menu").toggleClass("hidden");
+      });
+    </script>
+  </body>
+</html>
